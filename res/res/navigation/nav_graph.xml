@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/anasayfaFragment">
+
+    <fragment
+        android:id="@+id/anasayfaFragment"
+        android:name="com.ornek.AnasayfaFragment"
+        android:label="Anasayfa">
+        <action
+            android:id="@+id/action_anasayfa_to_a"
+            app:destination="@id/sayfaAFragment" />
+        <action
+            android:id="@+id/action_anasayfa_to_x"
+            app:destination="@id/sayfaXFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sayfaAFragment"
+        android:name="com.ornek.SayfaAFragment"
+        android:label="Sayfa A">
+        <action
+            android:id="@+id/action_a_to_b"
+            app:destination="@id/sayfaBFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sayfaBFragment"
+        android:name="com.ornek.SayfaBFragment"
+        android:label="Sayfa B">
+        <action
+            android:id="@+id/action_b_to_y"
+            app:destination="@id/sayfaYFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sayfaXFragment"
+        android:name="com.ornek.SayfaXFragment"
+        android:label="Sayfa X">
+        <action
+            android:id="@+id/action_x_to_y"
+            app:destination="@id/sayfaYFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/sayfaYFragment"
+        android:name="com.ornek.SayfaYFragment"
+        android:label="Sayfa Y"
+        tools:layout="@layout/fragment_sayfa_y">
+        <!-- Geri tuşu ile anasayfaya dönülecek -->
+    </fragment>
+</navigation>
