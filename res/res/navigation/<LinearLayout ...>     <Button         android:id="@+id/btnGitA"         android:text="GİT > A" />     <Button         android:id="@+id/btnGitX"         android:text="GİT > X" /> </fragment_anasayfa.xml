@@ -1,0 +1,8 @@
+<LinearLayout ...>
+    <Button
+        android:id="@+id/btnGitA"
+        android:text="GİT > A" />
+    <Button
+        android:id="@+id/btnGitX"
+        android:text="GİT > X" />
+</LinearLayout>
